@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    sh 'docker build --no-cache -t basketms/api -f DevOps-BasketMicroserviceCleanArchitecture/Dockerfile .'
+                    sh 'docker build --no-cache -t basketms/api -f BasketMicroserviceCleanArchitecture/Dockerfile .'
                 }
             }
         }
