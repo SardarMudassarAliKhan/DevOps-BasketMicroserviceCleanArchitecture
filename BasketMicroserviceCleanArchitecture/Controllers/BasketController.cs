@@ -21,8 +21,6 @@ namespace BasketMicroserviceCleanArchitecture.Controllers
         [HttpGet(nameof(GetBasketById))]
         public IActionResult GetBasketById(int Id)
         {
-
-             return Ok("Farrukh");
             var obj = _customService.Get(Id);
             if(obj == null)
             {
